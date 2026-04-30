@@ -1,0 +1,6 @@
+server-*.log
+*.log
+responsive-*.png
+.edge-test*/
+Thumbs.db
+.DS_Store

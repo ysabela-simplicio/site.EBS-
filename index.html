@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site institucional da EBS Construções & Reformas, com servicos de obras, reformas, redes sociais e atendimento digital."
+    />
+    <title>EBS Construções & Reformas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="EBS Construções & Reformas">
+        <span class="brand-mark">EBS</span>
+        <span>
+          <strong>Construções</strong>
+          <small>& Reformas</small>
+        </span>
+      </a>
+
+      <button class="icon-button menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+
+      <nav class="main-nav" data-nav>
+        <a href="#servicos">Servicos</a>
+        <a href="#obras">Obras</a>
+        <a href="#redes-sociais">Redes sociais</a>
+        <a href="#orcamento">Orcamento</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <picture>
+          <img src="assets/hero-construcao.png" alt="Ilustracao de obra residencial em reforma" />
+        </picture>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Obras, reformas e solucoes digitais</p>
+          <h1>
+            <span>EBS Construções</span>
+            <span>& Reformas</span>
+          </h1>
+          <p class="hero-copy">
+            Planejamento, execucao e acompanhamento de reformas residenciais, comerciais e corporativas com atendimento
+            organizado, visual moderno e acompanhamento claro em cada etapa da obra.
+          </p>
+          <div class="hero-actions" aria-label="Acoes principais">
+            <a class="button primary" href="#orcamento">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+              Solicitar orcamento
+            </a>
+            <a class="button secondary" href="#obras">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 19V5h16v14H4Zm4-4 3-4 2 3 2-2 3 3" />
+              </svg>
+              Ver obras
+            </a>
+          </div>
+        </div>
+        <div class="hero-stats" aria-label="Indicadores da EBS">
+          <article>
+            <strong>120+</strong>
+            <span>Projetos entregues</span>
+          </article>
+          <article>
+            <strong>7</strong>
+            <span>Especialidades tecnicas</span>
+          </article>
+          <article>
+            <strong>24h</strong>
+            <span>Retorno comercial</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div class="section-heading">
+          <p class="eyebrow">Atendimento completo</p>
+          <h2>Uma empresa preparada para transformar ambientes</h2>
+        </div>
+        <p>
+          A EBS une mao de obra qualificada, organizacao de cronograma, controle de materiais e comunicacao transparente
+          para reduzir atrasos e entregar reformas com acabamento profissional.
+        </p>
+      </section>
+
+      <section class="section services" id="servicos">
+        <div class="section-heading">
+          <p class="eyebrow">Servicos</p>
+          <h2>Solucoes para cada fase da obra</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-icon">01</span>
+            <h3>Construcao completa</h3>
+            <p>Execucao do alicerce ao acabamento, com equipe coordenada e etapas acompanhadas por checklist.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">02</span>
+            <h3>Reformas residenciais</h3>
+            <p>Modernizacao de cozinhas, banheiros, quartos, fachadas e areas externas com planejamento limpo.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">03</span>
+            <h3>Reformas comerciais</h3>
+            <p>Melhorias para lojas, escritorios e salas comerciais com foco em prazo, seguranca e funcionamento.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">04</span>
+            <h3>Acabamentos</h3>
+            <p>Pintura, pisos, revestimentos, forros, eletrica, hidraulica e detalhes finais de alto impacto visual.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">05</span>
+            <h3>Manutencao predial</h3>
+            <p>Correcoes estruturais, reparos preventivos e atendimento programado para condominios e empresas.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">06</span>
+            <h3>Gestao digital</h3>
+            <p>Relatorios, orcamentos, fotos da obra e acompanhamento por canais digitais de atendimento.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section works" id="obras">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Projetos prontos para apresentar ao cliente</h2>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filtros de obras">
+          <button class="filter-button active" type="button" data-filter="todos">Todos</button>
+          <button class="filter-button" type="button" data-filter="residencial">Residencial</button>
+          <button class="filter-button" type="button" data-filter="comercial">Comercial</button>
+          <button class="filter-button" type="button" data-filter="fachada">Fachada</button>
+        </div>
+        <div class="work-grid">
+          <article class="work-card" data-category="fachada">
+            <img src="assets/projeto-fachada.png" alt="Projeto de fachada reformada" loading="lazy" decoding="async" />
+            <div>
+              <span>Fachada</span>
+              <h3>Revitalizacao externa</h3>
+              <p>Pintura, reparos, iluminacao e composicao visual para valorizar o imovel.</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="residencial">
+            <img src="assets/projeto-residencial.png" alt="Projeto residencial em reforma" loading="lazy" decoding="async" />
+            <div>
+              <span>Residencial</span>
+              <h3>Casa moderna</h3>
+              <p>Atualizacao de areas internas com acabamento, conforto e melhor aproveitamento do espaco.</p>
+            </div>
+          </article>
+          <article class="work-card" data-category="comercial">
+            <img src="assets/projeto-corporativo.png" alt="Projeto corporativo em construcao" loading="lazy" decoding="async" />
+            <div>
+              <span>Comercial</span>
+              <h3>Ambiente corporativo</h3>
+              <p>Reforma para operacao diaria, com layout funcional e acabamento resistente.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section social-section" id="redes-sociais">
+        <div class="social-content">
+          <p class="eyebrow">Redes sociais</p>
+          <h2>Acompanhe a EBS nas redes</h2>
+          <p>
+            Mostre obras em andamento, antes e depois, depoimentos de clientes e canais rapidos para pedidos de
+            orcamento. Troque os links abaixo pelos perfis reais da empresa antes de publicar.
+          </p>
+          <div class="social-grid" aria-label="Canais sociais da EBS">
+            <a class="social-card instagram" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+              <span class="social-icon">IG</span>
+              <strong>Instagram</strong>
+              <small>Fotos, stories e antes/depois</small>
+            </a>
+            <a class="social-card whatsapp" href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">
+              <span class="social-icon">WA</span>
+              <strong>WhatsApp</strong>
+              <small>Atendimento e orcamentos</small>
+            </a>
+            <a class="social-card facebook" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+              <span class="social-icon">FB</span>
+              <strong>Facebook</strong>
+              <small>Publicacoes e comunidade</small>
+            </a>
+            <a class="social-card tiktok" href="https://www.tiktok.com/" target="_blank" rel="noreferrer">
+              <span class="social-icon">TK</span>
+              <strong>TikTok</strong>
+              <small>Bastidores e videos curtos</small>
+            </a>
+            <a class="social-card linkedin" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+              <span class="social-icon">IN</span>
+              <strong>LinkedIn</strong>
+              <small>Perfil profissional</small>
+            </a>
+            <a class="social-card youtube" href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+              <span class="social-icon">YT</span>
+              <strong>YouTube</strong>
+              <small>Videos de projetos e reformas</small>
+            </a>
+          </div>
+        </div>
+        <aside class="social-highlight" aria-label="Destaque de redes sociais">
+          <span>Conteudo que vende</span>
+          <h3>Publique o progresso das obras e transforme visitas em pedidos de orcamento.</h3>
+          <p>
+            Fotos reais, videos curtos e respostas rapidas no WhatsApp ajudam o cliente a confiar na empresa antes da
+            primeira visita tecnica.
+          </p>
+          <a class="button primary" href="#contato">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z" />
+            </svg>
+            Solicitar atendimento
+          </a>
+        </aside>
+      </section>
+
+      <section class="section process">
+        <div class="section-heading">
+          <p class="eyebrow">Processo</p>
+          <h2>Da primeira conversa ate a entrega</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>1</span>
+            <h3>Diagnostico</h3>
+            <p>Levantamento das necessidades, medidas, imagens e prioridades do cliente.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Orcamento</h3>
+            <p>Proposta com escopo, materiais, prazo estimado e condicoes comerciais.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Execucao</h3>
+            <p>Equipe em campo, acompanhamento por etapas e comunicacao constante.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Entrega</h3>
+            <p>Conferencia final, limpeza, ajustes e orientacoes para conservacao.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section budget" id="orcamento">
+        <div class="budget-panel">
+          <div>
+            <p class="eyebrow">Simulador</p>
+            <h2>Orcamento inicial de reforma</h2>
+            <p>
+              A estimativa abaixo ajuda o visitante a entender uma faixa de investimento antes da avaliacao tecnica.
+              O valor final depende do escopo, materiais, acesso ao local e prazo desejado.
+            </p>
+          </div>
+          <form class="calculator" data-calculator>
+            <label>
+              Area aproximada em m2
+              <input type="number" min="5" max="1000" value="45" data-area />
+            </label>
+            <label>
+              Tipo de servico
+              <select data-service>
+                <option value="950">Reforma simples</option>
+                <option value="1450">Reforma completa</option>
+                <option value="2100">Construcao nova</option>
+              </select>
+            </label>
+            <label>
+              Acabamento
+              <select data-finish>
+                <option value="1">Padrao pratico</option>
+                <option value="1.22">Padrao moderno</option>
+                <option value="1.45">Padrao premium</option>
+              </select>
+            </label>
+            <output class="estimate" data-estimate>R$ 42.750,00</output>
+            <a class="button primary full" href="#contato">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z" />
+              </svg>
+              Falar sobre meu projeto
+            </a>
+          </form>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="section-heading">
+          <p class="eyebrow">Clientes</p>
+          <h2>Mensagem profissional para gerar confianca</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote>
+            <p>"A EBS organizou cada etapa da reforma e entregou o apartamento dentro do prazo combinado."</p>
+            <cite>Cliente residencial</cite>
+          </blockquote>
+          <blockquote>
+            <p>"O atendimento foi claro, com fotos da evolucao da obra e previsao realista de custos."</p>
+            <cite>Cliente comercial</cite>
+          </blockquote>
+          <blockquote>
+            <p>"A equipe deixou a loja pronta para reabrir com acabamento profissional e boa comunicacao."</p>
+            <cite>Empresario local</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section contact" id="contato">
+        <div class="contact-info">
+          <p class="eyebrow">Contato</p>
+          <h2>Solicite uma avaliacao da sua obra</h2>
+          <p>
+            Envie os dados principais do projeto para a equipe avaliar o servico e retornar com uma proposta comercial.
+          </p>
+          <div class="contact-list">
+            <a href="tel:+5500000000000">
+              <strong>Telefone</strong>
+              <span>(00) 00000-0000</span>
+            </a>
+            <a href="mailto:contato@ebsconstrucoes.com.br">
+              <strong>E-mail</strong>
+              <span>contato@ebsconstrucoes.com.br</span>
+            </a>
+            <a href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">
+              <strong>WhatsApp</strong>
+              <span>Enviar mensagem</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" data-contact-form>
+          <label>
+            Nome
+            <input type="text" name="nome" placeholder="Seu nome" required />
+          </label>
+          <label>
+            Telefone
+            <input type="tel" name="telefone" placeholder="(00) 00000-0000" required />
+          </label>
+          <label>
+            Tipo de projeto
+            <select name="projeto" required>
+              <option value="">Selecione</option>
+              <option>Construcao</option>
+              <option>Reforma residencial</option>
+              <option>Reforma comercial</option>
+              <option>Manutencao</option>
+            </select>
+          </label>
+          <label>
+            Mensagem
+            <textarea name="mensagem" rows="5" placeholder="Conte um pouco sobre o que voce precisa"></textarea>
+          </label>
+          <button class="button primary full" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m22 2-7 20-4-9-9-4 20-7Z" />
+              <path d="M22 2 11 13" />
+            </svg>
+            Enviar solicitacao
+          </button>
+          <p class="form-message" data-form-message role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>EBS Construcoes & Reforma</strong>
+        <p>Construcoes, reformas e gestao digital de obras.</p>
+      </div>
+      <p>&copy; <span data-year></span> EBS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
